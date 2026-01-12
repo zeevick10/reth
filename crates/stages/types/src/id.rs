@@ -60,13 +60,14 @@ impl StageId {
     ];
 
     /// Stages that require state.
-    pub const STATE_REQUIRED: [Self; 9] = [
+    pub const STATE_REQUIRED: [Self; 10] = [
         Self::Execution,
         Self::PruneSenderRecovery,
         Self::MerkleUnwind,
         Self::AccountHashing,
         Self::StorageHashing,
         Self::MerkleExecute,
+        Self::MerkleChangeSets,
         Self::IndexStorageHistory,
         Self::IndexAccountHistory,
         Self::Prune,
